@@ -23,9 +23,6 @@ app.use(cors({
 app.use("/api/auth", router)
 app.use("/api/user", userRoutes)
 app.use("/api/crypto", cryptoRoutes)
-
-
-
 mongoose.connect(process.env.MONGO_DB_URI, {
     tls: true,
     tlsAllowInvalidCertificates: true
